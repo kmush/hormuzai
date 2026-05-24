@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+pydantic
+python-dotenv
+transformers
+torch
+sentencepiece
+feedparser
+requests
+httpx
+python-multipart
