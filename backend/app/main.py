@@ -26,6 +26,6 @@ def read_articles(skip: int = 0, limit: int = 50, lang: str = None, db: Session 
     articles = crud.get_articles(db, skip=skip, limit=limit, language=lang)
     return articles
 
-@app.post("/fetch-news"):
+@app.post("/fetch-news")
 async def fetch_news(db: Session = Depends(get_db)):
     return await crud.fetch_and_analyze_news(db)
